@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><JavaBlocks author="HP" scriptEngine="JavaScript" version="6010">
+  <option fullConnectorValues="true" grid="false" pascal="false"/>
+  <flowchart name="Start">
+    <canvas interval="5" posX="-16.510406" posY="26.416664" zoom="7"/>
+    <blocks>
+      <block id="1" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="-310.0"/>
+        <comment>Start</comment>
+        <connect ID="3"/>
+      </block>
+      <block id="2" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="100.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="3" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-10.0" posY="-90.0"/>
+        <content>lista = [0,9,84,7,5,6,5,6,4,3,11,2,1,43,4]&#13;;	function makeKopiec(lista)&#13;;	{&#13;;	    N=lista.length&#13;;	    Writeln(N)&#13;;	    for (i=floor(N/2); i&gt;=1; i--)&#13;;	    {&#13;;	        zanurzanie(lista,i)&#13;;	    }&#13;;	    return lista&#13;;	}&#13;;	function zanurzanie(lista,k)&#13;;	{&#13;;	    dl=lista.length-1&#13;;	    while (2*k&lt;=dl)&#13;;	    {&#13;;	        j=2*k&#13;;	        if (j&lt;dl &amp;&amp; lista[j]&lt;lista[j+1])&#13;;	        {&#13;;	            j++&#13;;	        }&#13;;	        if (!(lista[k]&lt;lista[j]))&#13;;	        {&#13;;	            break&#13;;	        }&#13;;	        temp=lista[k]&#13;;	        lista[k]=lista[j]&#13;;	        lista[j]=temp&#13;;	        k=j&#13;;	    }&#13;;	}&#13;;	lista=makeKopiec(lista)&#13;;	Writeln(lista)</content>
+        <connect ID="2"/>
+      </block>
+    </blocks>
+  </flowchart>
+  <flowchart name="zad.2.">
+    <canvas interval="5" posX="-9.5" posY="62.5" zoom="3"/>
+    <blocks>
+      <block id="1" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="10.0" posY="-300.0"/>
+        <comment>zad.2.</comment>
+        <connect ID="3"/>
+      </block>
+      <block id="2" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="0.0" posY="100.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="3" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="10.0" posY="-210.0"/>
+        <connect ID="2"/>
+      </block>
+    </blocks>
+  </flowchart>
+</JavaBlocks>

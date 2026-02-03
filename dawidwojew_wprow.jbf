@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><JavaBlocks author="ZTM 47C1" scriptEngine="JavaScript" version="6010">
+  <option fullConnectorValues="true" grid="false" pascal="false"/>
+  <flowchart name="zad.1.">
+    <canvas interval="5" posX="84.44278" posY="100.0" zoom="6"/>
+    <blocks>
+      <block id="1" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="40.0" posY="-690.0"/>
+        <comment>zad.1.</comment>
+        <connect ID="2"/>
+      </block>
+      <block id="2" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="40.0" posY="-400.0"/>
+        <content>lista=[0,50,40,15,30,20,10,100,5];	function czyjestkopcem(lista){;	dlugosc = lista.length;	jestkopcem = true;	for (k=1; k&lt;dlugosc; k++);	{;	 if (2*k &gt;= dlugosc) {;	 return true;	 };	 jeskopcem = lista[k]&gt;=lista[2*k];	 if (2*k+1&gt;=dlugosc) {;	 return jestkopcem;	 };	 jestkopcem=jestkopcem &amp;&amp; lista[k]&gt;=lista[2*k+1];	 if (!jestkopcem) {;	 return false;	 };	};	return true;	};	Writeln(lista);	Writeln(czyjestkopcem(lista))</content>
+        <connect ID="3"/>
+      </block>
+      <block id="3" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="40.0" posY="-100.0"/>
+        <comment>End</comment>
+      </block>
+    </blocks>
+  </flowchart>
+  <flowchart name="Zad.2.">
+    <canvas interval="5" posX="34.031013" posY="10.698702" zoom="6"/>
+    <blocks>
+      <block id="1" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="20.0" posY="-380.0"/>
+        <comment>Zad.2.</comment>
+        <connect ID="2"/>
+      </block>
+      <block id="2" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="20.0" posY="-140.0"/>
+        <content>lista=[0,50,40,15,30,20,10,100,5];	function czyjestkopcem(lista){;	dlugosc = lista.length;	jestkopcem = true;	for (k=1; k&lt;dlugosc; k++);	{;	 if (2*k &gt;= dlugosc) {;	 return true;	 };	 jeskopcem = lista[k]&gt;=lista[2*k];	 if (2*k+1&gt;=dlugosc) {;	 return jestkopcem;	 };	 jestkopcem=jestkopcem &amp;&amp; lista[k]&gt;=lista[2*k+1];	 if (!jestkopcem) {;	 return false;	 };	};	return true;	};	Writeln(lista);	Writeln(czyjestkopcem(lista))</content>
+        <connect ID="3"/>
+      </block>
+      <block id="3" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="20.0" posY="220.0"/>
+        <content>function wynurzanie(lista, k) {;	while (k&gt;1 &amp;&amp; lista[Math.floor(k/2)]&lt;lista[k]) {;	temp = lista[k];	lista[k] = lista[Math.floor(k/2)];	lista[Math.floor(k/2)]=temp;	k=Math.floor(k/2);	};	};	wynurzanie(lista,7);	Writeln(lista);	Writeln(czyjestkopcem(lista))</content>
+        <connect ID="4"/>
+      </block>
+      <block id="4" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="20.0" posY="380.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="5" type="COMMENT">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="460.0" posY="-260.0"/>
+        <content>50,30,15,40,20,10,5,2;	false;	50,40,15,30,20,10,5,2;	true;	</content>
+      </block>
+      <block id="6" type="COMMENT">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="470.0" posY="-140.0"/>
+        <content>50,40,15,30,20,10,5,2;	true;	50,40,15,30,20,10,5,2;	true</content>
+      </block>
+      <block id="9" type="COMMENT">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="480.0" posY="0.0"/>
+        <content>0,50,40,15,30,20,10,100,5;	false;	0,100,40,50,30,20,10,15,5;	true</content>
+      </block>
+    </blocks>
+  </flowchart>
+  <flowchart name="Zad.3.">
+    <canvas interval="5" posX="400.55383" posY="-137.39938" zoom="5"/>
+    <blocks>
+      <block id="1" name="Start" type="START">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="-20.0" posY="-420.0"/>
+        <comment>Zad.3.</comment>
+        <connect ID="3"/>
+      </block>
+      <block id="3" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-20.0" posY="-190.0"/>
+        <content>lista=[0,50,30,40,15,2,20,10,5];	function czyjestkopcem(lista){;	dlugosc = lista.length;	jestkopcem = true;	for (k=1; k&lt;dlugosc; k++);	{;	 if (2*k &gt;= dlugosc) {;	 return true;	 };	 jeskopcem = lista[k]&gt;=lista[2*k];	 if (2*k+1&gt;=dlugosc) {;	 return jestkopcem;	 };	 jestkopcem=jestkopcem &amp;&amp; lista[k]&gt;=lista[2*k+1];	 if (!jestkopcem) {;	 return false;	 };	};	return true;	};	Writeln(lista);	Writeln(czyjestkopcem(lista))</content>
+        <connect ID="4"/>
+      </block>
+      <block id="4" type="CPU">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-20.0" posY="260.0"/>
+        <content>function zanurzanie(lista, k);	{;	   dlugosc=lista.length-1;	   while (2*k&lt;=dlugosc);	   {;	      j=2*k;	      if (j&lt;dlugosc &amp;&amp; lista[j]&lt;lista[j+1]);	      {;	         j++;	      };	      if(!(lista[k]&lt;lista[j]));	      {;	         break;	      };	      temp=lista[k];	      lista[k]=lista[j];	      lista[j]=temp;	      k=j;	   };	};	;	zanurzanie(lista,2);	Writeln(lista);	Writeln(czyjestkopcem(lista))</content>
+        <connect ID="5"/>
+      </block>
+      <block id="5" type="RETURN">
+        <options displayComment="true"/>
+        <visual color="255 255 0" posX="-20.0" posY="540.0"/>
+        <comment>End</comment>
+      </block>
+      <block id="6" type="COMMENT">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-400.0" posY="370.0"/>
+        <content>0,2,50,40,15,30,20,10,5;	false;	0,50,30,40,15,2,20,10,5;	true</content>
+      </block>
+      <block id="7" type="COMMENT">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-400.0" posY="270.0"/>
+        <content>0,50,30,40,15,2,20,10,5;	true;	0,50,30,40,15,2,20,10,5;	true</content>
+      </block>
+      <block id="8" type="COMMENT">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-400.0" posY="160.0"/>
+        <content>0,50,2,40,15,30,20,10,5;	false;	0,50,30,40,15,2,20,10,5;	true</content>
+      </block>
+      <block id="9" type="COMMENT">
+        <options displayComment="false"/>
+        <visual color="255 255 0" posX="-400.0" posY="40.0"/>
+        <content>0,50,30,40,15,2,20,10,5;	true;	0,50,30,40,15,2,20,10,5;	true</content>
+      </block>
+    </blocks>
+  </flowchart>
+</JavaBlocks>
